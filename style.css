@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf"),
+    url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+:root {
+  --primary-color: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+  color: var(--dark-slate-grey);
+  background-color: var(--charcoal-grey);
+}
+
+main {
+  display: flex;
+  margin: 3em auto;
+  gap: 3em;
+  background-color: white;
+  padding: 2em;
+}
+
+.news-signup {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#errorMsg {
+  display: none;
+  color: var(--primary-color);
+}
+
+.illustMobile {
+  display: none;
+}
+
+.imgDesktop {
+  max-width: 300px;
+  width: 100%;
+}
+
+footer {
+  bottom: 0;
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+}

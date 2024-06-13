@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- mobile illust header -->
+      <div class="illustMobile">
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="illustration-sign-up-mobile"
+        />
+      </div>
+
+      <!-- Sign-up form start -->
+      <section class="news-signup">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form id="form" class="form" action="#">
+          <div class="form-group">
+            <div class="label-group">
+              <label for="email"> Email address</label>
+              <span id="errorMsg">Valid email required</span>
+            </div>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="email@company.com"
+              required
+            />
+          </div>
+          <button type="button" id="submit" onclick="validateForm()">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+      <!-- desktop illust -->
+      <section class="illustDesktop">
+        <img
+          class="imgDesktop"
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration-sign-up-desktop"
+        />
+      </section>
+    </main>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <section class="success-form">
+      <div>
+        <img src="assets/images/icon-success.svg" alt="icon-success" />
+        <h1>Thanks for subscribing!</h1>
+      </div>
+      <p>
+        A confirmation email has been sent to
+        <span id="emailValue">EmailValue</span>. Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+      <button>Dismiss message</button>
+    </section>
+    <!-- Success message end -->
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >
+      | Coded by
+      <a href="https://www.frontendmentor.io/profile/Vanillatte68">Roselin Y</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
