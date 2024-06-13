@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
+    <main id="mainForm">
       <!-- mobile illust header -->
       <div class="illustMobile">
         <img
@@ -27,7 +27,6 @@
           alt="illustration-sign-up-mobile"
         />
       </div>
-
       <!-- Sign-up form start -->
       <section class="news-signup">
         <h1>Stay updated!</h1>
@@ -68,17 +67,19 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <section class="success-form">
-      <div>
-        <img src="assets/images/icon-success.svg" alt="icon-success" />
-        <h1>Thanks for subscribing!</h1>
+    <section id="successForm" class="success-form">
+      <div class="group">
+        <div>
+          <img src="assets/images/icon-success.svg" alt="icon-success" />
+          <h1>Thanks for subscribing!</h1>
+        </div>
+        <p>
+          A confirmation email has been sent to
+          <span id="emailValue">EmailValue</span>. Please open it and click the
+          button inside to confirm your subscription.
+        </p>
       </div>
-      <p>
-        A confirmation email has been sent to
-        <span id="emailValue">EmailValue</span>. Please open it and click the
-        button inside to confirm your subscription.
-      </p>
-      <button>Dismiss message</button>
+      <button type="button" onclick="dismissForm()">Dismiss message</button>
     </section>
     <!-- Success message end -->
 
